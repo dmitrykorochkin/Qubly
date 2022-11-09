@@ -129,3 +129,9 @@ img {
 #header .inner_header .right_side_header .mnu_top li a:hover {
   color: #722ED1;
 }
+
+#top_banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
