@@ -80,6 +80,27 @@ img {
   color: #fff;
 }
 
+.btn {
+  color: #ffffff;
+  margin-right: 16px;
+  background-color: #722ED1;
+  border-radius: 24px;
+  padding: 14px 40px;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.btn.btn_white {
+  background-color: #722ED1;
+  color: #ffffff;
+}
+
 #header {
   padding-top: 24px;
 }
@@ -134,4 +155,62 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.notif {
+  padding: 8px 25px;
+  border-radius: 20px;
+  background: #F9F0FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.notif img {
+  width: 16px;
+  height: auto;
+  margin-right: 7px;
+}
+.notif p {
+  color: #722ED1;
+}
+.notif a {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  text-decoration: none;
+  border-bottom: 1px solid #722ED1;
+  color: #722ED1;
+}
+.notif a:hover {
+  color: #5b25a7;
+  border-color: #5b25a7;
+}
+
+.main_banner {
+  padding: 240px 0 370px;
+}
+.main_banner .mb_info h1 {
+  color: #000000;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 48px;
+  max-width: 416px;
+  margin-top: 10px;
+}
+.main_banner .mb_info .descr {
+  color: #8989a2;
+  margin: 14px 0 44px;
+}
+.main_banner .mb_info .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main_banner .mb_info .btns .btn_white {
+  margin-right: 16px;
 }

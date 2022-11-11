@@ -67,6 +67,22 @@ img
 		background-color:  $accent
 		color: #fff
 	
+.btn
+	color: #ffffff
+	margin-right: 16px
+	background-color: $accent
+	border-radius: 24px
+	padding: 14px 40px
+	text-decoration: none
+	transition: all .4s ease
+	box-shadow: 0 3px 6px rgba(0,0,0,.16)
+	&:hover
+		background-color: #ffffff
+		color: #000000
+	&.btn_white
+		background-color: $accent
+		color: #ffffff
+
 
 #header
 	padding-top: 24px
@@ -104,7 +120,45 @@ img
 	background-repeat: no-repeat
 	background-position: center
 
-.notif 
+.notif
+	padding: 8px 25px
+	border-radius: 20px
+	background: $light_accent
+	display: flex
+	align-items: center
+	img
+		width: 16px
+		height: auto
+		margin-right: 7px
+	p
+		color: $accent
+	a
+		transition: all .4s ease
+		text-decoration: none
+		border-bottom: 1px solid $accent
+		color: $accent 
+		&:hover 
+			color: darken($accent, 10%)
+			border-color: darken($accent, 10%)
+
 
 .main_banner
+	padding: 240px 0 370px
 	.mb_info
+		h1
+			color: #000000
+			font-weight: 700
+			line-height: 1.2
+			font-size: 48px
+			max-width: 416px
+			margin-top: 10px
+		.descr
+			color: #8989a2
+			margin: 14px 0 44px
+			
+		.btns
+			display: flex
+			align-items: center
+			.btn_white
+				margin-right: 16px
+
