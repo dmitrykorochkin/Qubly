@@ -46,7 +46,6 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-	
 
 img
 	max-width: 100%
@@ -64,9 +63,9 @@ img
 	text-decoration: none
 	transition: all .4s ease
 	&:hover
-		background-color:  $accent
+		background-color: $accent
 		color: #fff
-	
+
 .btn
 	color: #ffffff
 	margin-right: 16px
@@ -82,7 +81,6 @@ img
 	&.btn_white
 		background-color: $accent
 		color: #ffffff
-
 
 #header
 	padding-top: 24px
@@ -103,30 +101,57 @@ img
 				display: flex
 				list-style-type: none
 				>li
-					display:inline-block
+					display: inline-block
 					position: relative
 				a
 					display: block
 					text-decoration: none
-					margin-right: 40px
+					padding-right: 40px
+					padding: 5px 40px 5px 5px
 					font-size: 15px
 					color: #000
 					transition: color 0.4s ease
 					&:hover
 						color: $accent
-					>.sub_menu
-						position: absolute
-						top: 20px
-						background-color: #fff
-						box-shadow: 0 3px 6px
-						z-index: 10
-						border-radius: 5px
-						>li 
-							display: block
-							>a 
-								padding: 5px 10px
 
+.sub_menu
+	position: absolute
+	top: 35px
+	background-color: #fff
+	box-shadow: 0 3px 6px
+	z-index: 10
+	border-radius: 5px
+	animation: .6s opac
+	display: none
+	>li
+		display: block
+		>a
+			padding: 3px 10px
+			font-size: 14px
 
+.has_sub_menu
+	&:hover >.sub_menu
+		display: block
+	&::after
+		content: ''
+		display: block
+		width: 8px
+		height: 4px
+		background-image: url('/img/main/arrow.svg')
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+		position: absolute
+		top: 10px
+		right: 24px
+
+@keyframes opac
+from
+	opacity: 0
+to
+	opacity: 1
+
+		
 
 #top_banner
 	background-size: cover
@@ -150,11 +175,10 @@ img
 		transition: all .4s ease
 		text-decoration: none
 		border-bottom: 1px solid $accent
-		color: $accent 
-		&:hover 
+		color: $accent
+		&:hover
 			color: darken($accent, 10%)
 			border-color: darken($accent, 10%)
-
 
 .main_banner
 	padding: 240px 0 370px
@@ -169,10 +193,9 @@ img
 		.descr
 			color: #8989a2
 			margin: 14px 0 44px
-			
+
 		.btns
 			display: flex
 			align-items: center
 			.btn_white
 				margin-right: 16px
-
