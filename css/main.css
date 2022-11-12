@@ -137,18 +137,35 @@ img {
   display: flex;
   list-style-type: none;
 }
-#header .inner_header .right_side_header .mnu_top li a {
+#header .inner_header .right_side_header .mnu_top > li {
+  position: relative;
+}
+#header .inner_header .right_side_header .mnu_top a {
   display: block;
   text-decoration: none;
   margin-right: 40px;
   font-size: 15px;
-  font-weight: 500;
   color: #000;
   -webkit-transition: color 0.4s ease;
   transition: color 0.4s ease;
 }
-#header .inner_header .right_side_header .mnu_top li a:hover {
+#header .inner_header .right_side_header .mnu_top a:hover {
   color: #722ED1;
+}
+#header .inner_header .right_side_header .mnu_top a > .sub_menu {
+  position: absolute;
+  top: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 3px 6px;
+          box-shadow: 0 3px 6px;
+  z-index: 10;
+  border-radius: 5px;
+}
+#header .inner_header .right_side_header .mnu_top a > .sub_menu > li {
+  display: block;
+}
+#header .inner_header .right_side_header .mnu_top a > .sub_menu > li > a {
+  padding: 5px 10px;
 }
 
 #top_banner {

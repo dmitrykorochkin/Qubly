@@ -102,18 +102,31 @@ img
 			.mnu_top
 				display: flex
 				list-style-type: none
-				li
+				>li
 					display:inline-block
-					a
-						display: block
-						text-decoration: none
-						margin-right: 40px
-						font-size: 15px
-						font-weight: 500
-						color: #000
-						transition: color 0.4s ease
-						&:hover
-							color: $accent
+					position: relative
+				a
+					display: block
+					text-decoration: none
+					margin-right: 40px
+					font-size: 15px
+					color: #000
+					transition: color 0.4s ease
+					&:hover
+						color: $accent
+					>.sub_menu
+						position: absolute
+						top: 20px
+						background-color: #fff
+						box-shadow: 0 3px 6px
+						z-index: 10
+						border-radius: 5px
+						>li 
+							display: block
+							>a 
+								padding: 5px 10px
+
+
 
 #top_banner
 	background-size: cover
