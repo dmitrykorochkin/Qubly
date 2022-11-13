@@ -352,8 +352,15 @@ section.information .right_info > .descr {
 }
 .rewiews .item_rev {
   text-align: center;
+  display: none;
+  -webkit-animation: opac 0.4s ease;
+          animation: opac 0.4s ease;
+}
+.rewiews .item_rev.active {
+  display: block;
 }
 .rewiews .item_rev > .quotes {
+  height: 100px;
   color: #160637;
   font-weight: 500;
   font-size: 22px;
@@ -413,6 +420,4 @@ section.information .right_info > .descr {
 .rewiews .nav_rev > div:hover, .rewiews .nav_rev > div.active {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }

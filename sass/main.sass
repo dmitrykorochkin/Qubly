@@ -263,7 +263,12 @@ section.information
 	background-image: url('/img/rewiews/rew_bg.svg')
 	.item_rev
 		text-align: center
+		display: none
+		animation: opac .4s ease
+		&.active
+			display: block
 		>.quotes
+			height: 100px
 			color: #160637
 			font-weight: 500
 			font-size: 22px
@@ -300,5 +305,6 @@ section.information
 			align-items: center
 			&:hover, &.active
 				filter: grayscale(0)
-				transform: scale(1.05)
+
+
 			
