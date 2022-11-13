@@ -192,17 +192,23 @@ img {
   right: 24px;
 }
 
-@-webkit-keyframes opac;
-
-@keyframes opac;
-from {
-  opacity: 0;
+@-webkit-keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-to {
-  opacity: 1;
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 #top_banner {
   background-size: cover;
   background-repeat: no-repeat;
@@ -335,4 +341,78 @@ section.information .right_info > .descr {
   font-weight: 500;
   color: #8989A2;
   max-width: 450px;
+}
+
+.rewiews {
+  padding: 200px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/img/rewiews/rew_bg.svg");
+}
+.rewiews .item_rev {
+  text-align: center;
+}
+.rewiews .item_rev > .quotes {
+  color: #160637;
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 16px;
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.rewiews .item_rev > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.rewiews .item_rev > .name {
+  margin-top: 16px;
+}
+.rewiews .item_rev > .name, .rewiews .item_rev > .position {
+  color: #000000;
+  font-weight: 800;
+}
+.rewiews .line {
+  height: 1px;
+  width: 100%;
+  background-color: #DEC9FA;
+  margin: 56px 0;
+}
+.rewiews .nav_rev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
+}
+.rewiews .nav_rev > div {
+  width: 16%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rewiews .nav_rev > div:hover, .rewiews .nav_rev > div.active {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }

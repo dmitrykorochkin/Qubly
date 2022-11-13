@@ -146,12 +146,10 @@ img
 		right: 24px
 
 @keyframes opac
-from
-	opacity: 0
-to
-	opacity: 1
-
-		
+	from
+		opacity: 0
+	to
+		opacity: 1
 
 #top_banner
 	background-size: cover
@@ -220,11 +218,11 @@ h2
 	color: #160637
 	margin: 32px auto 12px
 .desription
-		max-width: 620px
-		text-align: center
-		margin: 0 auto
-		color: #8989a2
-		margin-bottom: 48px
+	max-width: 620px
+	text-align: center
+	margin: 0 auto
+	color: #8989a2
+	margin-bottom: 48px
 .row_adv
 	.item_adv
 		>img
@@ -238,7 +236,7 @@ h2
 			line-height: 24px
 			color: #160637
 			margin: 24px 0 16px
-			
+
 		>.descr
 			color: #8989A2
 
@@ -256,3 +254,51 @@ section.information
 			font-weight: 500
 			color: #8989A2
 			max-width: 450px
+
+.rewiews
+	padding: 200px 0
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	background-image: url('/img/rewiews/rew_bg.svg')
+	.item_rev
+		text-align: center
+		>.quotes
+			color: #160637
+			font-weight: 500
+			font-size: 22px
+			margin-bottom: 16px
+			max-width: 660px
+			margin: 0 auto
+			margin-bottom: 10px
+		>img
+			width: 80px
+			height: 80px
+			border-radius: 50%
+		>.name
+			margin-top: 16px
+		>.name, >.position
+			color: #000000
+			font-weight: 800
+	.line
+		height: 1px
+		width: 100%
+		background-color: #DEC9FA
+		margin: 56px 0
+	.nav_rev
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		cursor: pointer
+		>div
+			width: 16%
+			filter: grayscale(1)
+			transition: all .4s ease
+			display: flex
+			justify-content: center
+			align-items: center
+			&:hover, &.active
+				filter: grayscale(0)
+				transform: scale(1.05)
+			
