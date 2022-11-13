@@ -423,6 +423,7 @@ section.information .right_info > .descr {
 }
 
 .btn_form {
+  cursor: pointer;
   display: block;
   width: 100%;
   padding: 14px;
