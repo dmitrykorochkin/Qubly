@@ -422,6 +422,23 @@ section.information .right_info > .descr {
           filter: grayscale(0);
 }
 
+.btn_form {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  color: #fff;
+  background: #722ED1;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: border-radius 0.4s ease-in-out;
+  transition: border-radius 0.4s ease-in-out;
+}
+.btn_form:hover {
+  border-radius: 10px;
+}
+
 #pre_footer .pf_info h4 {
   color: #160637;
   font-weight: 900;
@@ -436,4 +453,78 @@ section.information .right_info > .descr {
 #pre_footer .pf_info > .img_responsive {
   display: block;
   margin: 0 auto;
+}
+#pre_footer .form_wrapper {
+  background-color: #F9F0FF;
+  border-radius: 4px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+#pre_footer .form_wrapper > form {
+  border: 1px solid #F9F0FF;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-box-shadow: 0 10px 20px rgba(116, 116, 116, 0.16);
+          box-shadow: 0 10px 20px rgba(116, 116, 116, 0.16);
+  border-radius: 4px;
+  width: 86%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 36px 36px 24px;
+}
+#pre_footer .form_wrapper > form > h4 {
+  color: #160637;
+  font-size: 22px;
+  margin-bottom: 32px;
+  font-weight: 900;
+  text-align: center;
+}
+#pre_footer .form_wrapper > form > input {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(137, 137, 162, 0.5);
+  margin-bottom: 16px;
+  padding: 14px 24px;
+}
+#pre_footer .form_wrapper > form > input::-webkit-input-placeholder {
+  color: #8989A2;
+  font-size: 16px;
+}
+#pre_footer .form_wrapper > form > input:-ms-input-placeholder {
+  color: #8989A2;
+  font-size: 16px;
+}
+#pre_footer .form_wrapper > form > input::-ms-input-placeholder {
+  color: #8989A2;
+  font-size: 16px;
+}
+#pre_footer .form_wrapper > form > input::placeholder {
+  color: #8989A2;
+  font-size: 16px;
+}
+#pre_footer .form_wrapper > form > .or {
+  text-align: center;
+  margin: 20px auto 15px;
+  color: #000000;
+  text-transform: uppercase;
+}
+#pre_footer .form_wrapper > form > a {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  text-decoration: none;
+}
+#pre_footer .form_wrapper > form > .footer_form > .line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(137, 137, 162, 0.5);
+  margin: 22px 0px;
+}
+#pre_footer .form_wrapper > form > .footer_form > p {
+  text-align: center;
+}
+#pre_footer .form_wrapper > form > .footer_form > p > a {
+  text-transform: none;
+  color: #722ED1;
 }

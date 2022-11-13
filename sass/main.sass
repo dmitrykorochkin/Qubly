@@ -305,7 +305,18 @@ section.information
 			align-items: center
 			&:hover, &.active
 				filter: grayscale(0)
-
+.btn_form
+	display: block
+	width: 100%
+	padding: 14px
+	color: #fff
+	background: $accent
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16)
+	border: none
+	border-radius: 4px
+	transition: border-radius .4s ease-in-out
+	&:hover
+		border-radius: 10px
 #pre_footer
 	.pf_info
 		h4
@@ -320,3 +331,57 @@ section.information
 		>.img_responsive
 			display: block
 			margin: 0 auto
+	.form_wrapper
+		background-color: #F9F0FF
+		border-radius: 4px
+		max-width: 480px
+		margin: 0 auto
+		>form
+			border: 1px solid #F9F0FF
+			transform: translateY(-40px)
+			box-shadow: 0 10px 20px rgba(116, 116, 116, .16)
+			border-radius: 4px
+			width: 86%
+			margin: 0 auto
+			background-color: #fff
+			padding: 36px 36px 24px
+			>h4
+				color: #160637
+				font-size: 22px
+				margin-bottom: 32px
+				font-weight: 900
+				text-align: center
+			>input
+				display: block
+				width: 100%
+				border-radius: 4px
+				border: 1px solid rgba(137, 137, 162, .5)
+				margin-bottom: 16px
+				padding: 14px 24px
+				&::placeholder
+					color: #8989A2
+					font-size: 16px
+			>.or
+				text-align: center
+				margin: 20px auto 15px
+				color: #000000
+				text-transform: uppercase
+			>a
+				display: block
+				margin: 0 auto
+				max-width: 200px
+				text-decoration: none
+			>.footer_form
+				>.line
+					height: 1px
+					width: 100%
+					background-color: rgba(137,137,162, .5s)
+					margin: 22px 0px
+				>p
+					text-align: center
+					>a
+						text-transform: none
+						color: $accent 
+
+
+
