@@ -421,3 +421,19 @@ section.information .right_info > .descr {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
+
+#pre_footer .pf_info h4 {
+  color: #160637;
+  font-weight: 900;
+  font-size: 38px;
+  text-align: center;
+  line-height: 1.2;
+}
+#pre_footer .pf_info > .line_img {
+  display: block;
+  margin: 42px auto;
+}
+#pre_footer .pf_info > .img_responsive {
+  display: block;
+  margin: 0 auto;
+}
