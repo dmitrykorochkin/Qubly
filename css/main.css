@@ -211,7 +211,7 @@ to {
 
 .notif {
   padding: 8px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   background: #F9F0FF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,7 +219,9 @@ to {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 256px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .notif img {
   width: 16px;
@@ -266,4 +268,53 @@ to {
 }
 .main_banner .mb_info .btns .btn_white {
   margin-right: 16px;
+}
+
+section {
+  padding: 80px 0;
+}
+section#top_banner {
+  padding: 0;
+}
+
+.advantages .notif {
+  margin: 0 auto;
+}
+.advantages .notif img {
+  width: 26px;
+  height: auto;
+  margin-right: 7px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #160637;
+  margin: 32px auto 12px;
+}
+
+.desription {
+  max-width: 620px;
+  text-align: center;
+  margin: 0 auto;
+  color: #8989a2;
+  margin-bottom: 48px;
+}
+
+.row_adv .item_adv > img {
+  width: 48px;
+  height: 40px;
+  border-radius: 50%;
+}
+.row_adv .item_adv > .heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #160637;
+  margin: 24px 0 16px;
+}
+.row_adv .item_adv > .descr {
+  color: #8989A2;
 }
