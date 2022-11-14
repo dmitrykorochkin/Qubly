@@ -109,8 +109,86 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* */
+  .hamburger {
+    display: block;
+  }
+
+  #header {
+    position: relative;
+  }
+  #header .inner_header .right_side_header .mnu_top {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 70px;
+    width: 100%;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 10px 0;
+    z-index: 11;
+  }
+  #header .inner_header .right_side_header .mnu_top > li {
+    display: block;
+    padding: 5px 15px;
+  }
+  #header .inner_header .right_side_header .mnu_top > li > .sub_menu {
+    display: block;
+    position: relative;
+    top: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: none;
+    -webkit-animation: none;
+            animation: none;
+    padding-left: 15px;
+  }
+
+  #header .inner_header .right_side_header .mnu_top > li.has_sub_menu::after {
+    display: none;
+  }
+
+  #top_banner {
+    background-color: #f5faff;
+    background-image: none !important;
+  }
+  #top_banner .main_banner {
+    padding: 20px;
+  }
+
+  .notif {
+    margin: 0 auto;
+  }
+
+  .main_banner .mb_info {
+    text-align: center;
+  }
+  .main_banner .mb_info > h1 {
+    font-size: 30px;
+  }
+
+  .main_banner .mb_info > .descr {
+    font-size: 14px;
+  }
+
+  .main_banner .mb_info > .btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main_banner .mb_info > .btns > a {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .main_banner .mb_info > .btns > a > .white_btn {
+    margin: 0;
+  }
 }
+section {
+  padding: 40px 0;
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
   /* */
