@@ -22,6 +22,20 @@ $(function() {
 		$(revID).addClass('active');
 	})
 
+	$('a.yakor').on('click', function(event){
+		let $anchor = $(this);
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top - 9000
+		},{
+			duration: 2000,
+			specialEasing: {
+				width: 'linear',
+				height: 'easeInOutCubic'
+			}
+		})
+		event.preventDefault();
+	});
+
 });
 
 

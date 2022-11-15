@@ -106,9 +106,23 @@
   #footer {
     padding: 30px 0;
   }
+  #footer .mnu_footer_wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  .rewiews .nav_rev {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .rewiews .nav_rev > div {
+    margin-bottom: 15px;
+    width: 40%;
+  }
+
   h2 {
     font-size: 28px;
   }
@@ -220,16 +234,6 @@ section {
 
 #footer .mnu_footer_wrapper > .mnu_footer > ul > li > a {
   padding-bottom: 10px;
-}
-
-.rewiews .nav_rev {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.rewiews .nav_rev > div {
-  margin-bottom: 15px;
-  width: 40%;
 }
 
 /* Custom, iPhone Retina */
