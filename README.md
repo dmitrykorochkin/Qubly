@@ -1,2 +1,2 @@
 # Qubly
-Responsive
+Адаптивная вертска макета из Figma 
